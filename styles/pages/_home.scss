@@ -15,6 +15,30 @@
             height: 100%;
             padding: 10em 1em 1em 1em;
             font-size: 1.5em;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            p{
+                margin-bottom: 5px;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+
+            .btns {
+                display: block;
+                .cta {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    text-decoration: none;
+                    border: 2px solid white;
+                    padding: 10px 30px;
+                    font-size: unset;
+                }
+            }
         }
     }
 }
