@@ -849,6 +849,7 @@ html {
     border: 2px solid white;
     padding: 10px 30px;
     font-size: unset;
+    white-space: nowrap;
   }
 }
 /*# sourceMappingURL=main.css.map */
