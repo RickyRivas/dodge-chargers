@@ -830,6 +830,9 @@ html {
   }
   #landing .landing-container .btns {
     display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   #landing .landing-container .btns .cta {
     display: -webkit-box;

@@ -28,6 +28,7 @@
 
             .btns {
                 display: block;
+                width: max-content;
                 .cta {
                     display: flex;
                     justify-content: center;
@@ -37,6 +38,7 @@
                     border: 2px solid white;
                     padding: 10px 30px;
                     font-size: unset;
+                    // white-space: nowrap;
                 }
             }
         }
