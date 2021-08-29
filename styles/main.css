@@ -885,6 +885,9 @@ html {
   }
   #landing .landing-container h1 {
     margin-bottom: 20px;
+    font-size: 2em;
+    line-height: 1em;
+    text-transform: uppercase;
   }
   #landing .landing-container .btns {
     display: -webkit-box;
