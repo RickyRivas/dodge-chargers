@@ -401,6 +401,7 @@ html {
   }
   nav .nav-wrapper .nav-links li a {
     text-decoration: none;
+    color: white;
   }
   nav .nav-wrapper .nav-links li:nth-child(1) {
     margin-top: 0em;
@@ -813,20 +814,6 @@ html {
 .swiper-slide {
   position: relative;
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 10s;
-  transition: all 10s;
 }
 
 .swiper-slide img {
@@ -857,11 +844,14 @@ html {
             align-items: center;
   }
   #landing .landing-container {
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     position: absolute;
     color: white;
     width: 100%;
+    max-width: 900px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     height: 100%;
     padding: 1em;
     font-size: 1.5em;
@@ -899,11 +889,9 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #landing .landing-container .btns :nth-child(1) {
     background-color: white;
@@ -925,8 +913,207 @@ html {
     padding: 10px 30px;
     font-size: 20px;
     white-space: nowrap;
-    margin-bottom: 5px;
+    margin: 0 5px 5px 0;
     width: 100%;
+    max-width: 363px;
+  }
+}
+
+@media (min-width: 768px) {
+  #landing {
+    position: relative;
+    height: 768px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/dcimg1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/dcimg1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing .landing-container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    width: 100%;
+    max-width: 900px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 100%;
+    padding: 1em;
+    font-size: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 2;
+  }
+  #landing .landing-container p {
+    margin-bottom: 5px;
+  }
+  #landing .landing-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  #landing .landing-container .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
+  #landing .landing-container .btns :nth-child(1) {
+    background-color: white;
+    color: black !important;
+  }
+  #landing .landing-container .btns .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 30px;
+    font-size: 20px;
+    white-space: nowrap;
+    margin: 0 5px 5px 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #landing {
+    position: relative;
+    height: 768px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/dcimg1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/dcimg1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing .landing-container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    width: 100%;
+    max-width: 900px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 100%;
+    padding: 1em;
+    font-size: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 2;
+  }
+  #landing .landing-container p {
+    margin-bottom: 5px;
+    font-size: 1.8em;
+  }
+  #landing .landing-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.8em;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  #landing .landing-container .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
+  #landing .landing-container .btns :nth-child(1) {
+    background-color: white;
+    color: black !important;
+  }
+  #landing .landing-container .btns .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 30px;
+    font-size: 20px;
+    white-space: nowrap;
+    margin: 0 5px 5px 0;
+    width: 100%;
+    max-width: unset;
   }
 }
 /*# sourceMappingURL=main.css.map */
