@@ -1011,11 +1011,12 @@ html {
   #intro .intro-cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (minmax(270px, 1fr))[auto-fit];
-        grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
+    -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     place-items: center;
     grid-gap: 1em;
     max-width: 1200px;
+    margin: auto;
   }
   #intro .intro-cards .card {
     width: 100%;
