@@ -1008,17 +1008,20 @@ html {
     width: 100%;
     padding: 2em 1em;
   }
-  #intro .intro-cards {
+  #intro .intro {
+    max-width: 1200px;
+    margin: auto;
+  }
+  #intro .intro .intro-cards {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     place-items: center;
-    grid-gap: 1em;
-    max-width: 1200px;
+    grid-gap: 1.5em;
     margin: auto;
   }
-  #intro .intro-cards .card {
+  #intro .intro .intro-cards .card {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1035,15 +1038,15 @@ html {
             flex-direction: column;
     line-height: 1.5;
   }
-  #intro .intro-cards .card img {
+  #intro .intro .intro-cards .card img {
     margin-bottom: 5px;
   }
-  #intro .intro-cards .card span {
+  #intro .intro .intro-cards .card span {
     font-weight: bold;
     font-size: 1.3em;
     margin-bottom: 10px;
   }
-  #intro .intro-cards .card p {
+  #intro .intro .intro-cards .card p {
     margin-bottom: 10px;
   }
 }
