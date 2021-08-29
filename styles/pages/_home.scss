@@ -1,4 +1,5 @@
 @media (min-width: 0px) {
+
     // Landing Container 
     #landing {
         position: relative;
@@ -46,7 +47,7 @@
                 width: 100%;
                 flex-wrap: wrap;
 
-                :nth-child(1){
+                :nth-child(1) {
                     background-color: white;
                     color: black !important;
                 }
@@ -64,15 +65,53 @@
                     margin: 0 5px 5px 0;
                     width: 100%;
                     max-width: 363px;
+
+                    :hover {
+                        opacity: 70%;
+                    }
                 }
             }
         }
     }
+
     // Intro 
     #intro {
         width: 100%;
+        padding: 2em 1em;
+
+        .intro-cards {
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
+            place-items: center;
+            grid-gap: 1em;
+            max-width: 1200px;
+
+            .card {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                line-height: 1.5;
+
+                img {
+                    margin-bottom: 5px;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 1.3em;
+                    margin-bottom: 10px
+                }
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
 }
+
 @media (min-width: 768px) {
     #landing {
         position: relative;
@@ -121,7 +160,7 @@
                 flex-direction: row;
                 flex-wrap: unset;
 
-                :nth-child(1){
+                :nth-child(1) {
                     background-color: white;
                     color: black !important;
                 }
@@ -143,6 +182,7 @@
         }
     }
 }
+
 @media (min-width: 1024px) {
     #landing {
         position: relative;
@@ -192,7 +232,7 @@
                 flex-direction: row;
                 flex-wrap: unset;
 
-                :nth-child(1){
+                :nth-child(1) {
                     background-color: white;
                     color: black !important;
                 }
