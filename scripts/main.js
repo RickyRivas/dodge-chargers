@@ -49,11 +49,11 @@ navLink2.addEventListener("click", reverseSlide);;
 // Landing Swiper.js Init
 
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    loop: true,
+    spaceBetween: 0,
     effect: "fade",
+    loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
     },
     pagination: {
